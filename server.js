@@ -8,7 +8,7 @@ import RestaurantRouter from "./routes/restaurants.js";
 import OrderRouter from "./routes/order.js";
 
 const server = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 server.use(cors());
 server.options("*", cors());
